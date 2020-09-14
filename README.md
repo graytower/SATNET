@@ -59,31 +59,32 @@ Compile all cpp files in src packet.
 
 ## How to run
 ### First,enter the root direction of the system.
+```
 cd SATNET
-
+```
 ### Second,run the system.
-Sudo ./main
-
+```
+sudo ./main
+```
 ### Third,enter “start” to start the timer and wait the route be configured of each node 
 
 ### You can verify the satellite emulation network by entering some commands to examine the container running state
-
-('''
+```
 sudo ip netns show
-''')
+```
 
-('''
+```
 sudo ip netns exec sat1 ip route show
-''')
+```
 
 ### Also, you can verify the network connectivity by entering some commands:
-('''
+```
 sudo ip netns exec sat1 ping 3.0.0.2
-''')
+```
 
 ### You can stop the emulation system by entering "stop" and exit the system by entering "exit"
 
 ### Once the virtual network devices are not completely cleared, you can clear them forcibly by entering:
-('''
+```
 sudo del/./del
-''')
+```
